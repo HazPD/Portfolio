@@ -1,0 +1,72 @@
+/* TYPING ANIMATION FOR PHRASE */
+.phrase {
+    border-right:5px solid;
+    display:inline-block;
+    white-space: nowrap;
+    overflow:hidden;
+    animation:
+        typing 2s steps(24,end) forwards,
+        blink .8s infinite;
+}
+
+@keyframes blink {
+    from { border-color: black}
+    to {border-color: transparent}
+}
+
+@keyframes typing {
+    from {width:0px}
+}
+/* TYPING ANIMATION FOR PHRASE */
+
+/* GLITCH ANIMATION FOR PHRASE */
+p:hover{
+    opacity: 0.9;
+    text-shadow: 0px -5px #ec2225, 0px 5px #00c2cb, -5px 0px #ec2225, 5px 0px #00c2cb;
+}
+
+p::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #e0ffff;
+    z-index: -1;
+}
+
+p:hover{
+    animation: animate 1s ease-in-out infinite;
+    z-index: 4;
+}
+
+@keyframes animate {
+    0%, 100% {
+        top: -7px;
+        left: 0;
+        opacity: 1;
+        text-shadow: 0px -5px #ec2225;
+    }
+    20% {
+        top: 0;
+        left: -10px;
+        opacity: 0.7;
+    }
+    40% {
+        top: 7px;
+        left: 0;
+        opacity: 0.2;
+        text-shadow: 0px 5px #00c2cb;
+    }
+    60% {
+        top: 0;
+        left: 10px;
+        opacity: 0.7;
+        text-shadow: -5px 0px #ec2225;
+    }
+    80% {
+        top: -7px;
+        left: 0;
+        opacity: 1;
+        text-shadow: 5px 0px #00c2cb;
+    }
+}
