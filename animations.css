@@ -48,11 +48,11 @@ p:hover{
     }
     20% {
         top: 0;
-        left: -10px;
+        left: 10px;
         opacity: 0.7;
     }
     40% {
-        top: 7px;
+        top: -7px;
         left: 0;
         opacity: 0.2;
         text-shadow: 0px 5px #00c2cb;
@@ -67,6 +67,6 @@ p:hover{
         top: -7px;
         left: 0;
         opacity: 1;
-        text-shadow: 5px 0px #00c2cb;
+        text-shadow: 5px 0px #ec00b9;
     }
 }
