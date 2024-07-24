@@ -31,12 +31,13 @@ body {
 }
 
 .phrase {
-    text-align:center;
-    justify-content: center;
+    display:flex;
+    justify-content:center;
+    align-items: flex-end;
+    text-align: center;
     width:75%;
-    height:20%;
+    height:25%;
     font-size: 6em;
-    
 }
 
 .logo {
